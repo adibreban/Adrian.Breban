@@ -57,7 +57,7 @@ use Adrian\Breban\Tools\Image\Domain\Model\ImageInterface;
  */
  
 class ImageViewHelper extends \TYPO3\Media\ViewHelpers\ImageViewHelper{
-//class ImageViewHelper extends \TYPO3\Fluid\Core\ViewHelper\AbstractTagBasedViewHelper {
+
 	/**
 	 * Renders an HTML tag from a given image.
 	 *
