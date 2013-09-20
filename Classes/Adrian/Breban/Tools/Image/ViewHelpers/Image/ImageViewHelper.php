@@ -2,7 +2,6 @@
 namespace Adrian\Breban\Tools\Image\ViewHelpers\Image;
 
 use TYPO3\Flow\Annotations as Flow;
-//use TYPO3\Media\Domain\Model\ImageInterface;
 use Adrian\Breban\Tools\Image\Domain\Model\ImageInterface;
 
 
@@ -61,7 +60,7 @@ class ImageViewHelper extends \TYPO3\Media\ViewHelpers\ImageViewHelper{
 	/**
 	 * Renders an HTML tag from a given image.
 	 *
-	 * @param Adrian\Breban\Tools\Image\Domain\Model\ImageInterface $image If specified, this resource object is used instead of the path and package information
+	 * @param \Adrian\Breban\Tools\Image\Domain\Model\ImageInterface $image If specified, this resource object is used instead of the path and package information
 	 * @param integer $maximumWidth Desired maximum height of the image
 	 * @param integer $maximumHeight Desired maximum width of the image
 	 * @param boolean $allowCropping Whether the image should be cropped if the given sizes would hurt the aspect ratio

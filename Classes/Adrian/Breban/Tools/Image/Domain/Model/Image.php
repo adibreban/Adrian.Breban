@@ -13,7 +13,7 @@ use TYPO3\Flow\Annotations as Flow;
 class Image extends \TYPO3\Media\Domain\Model\Image implements \Adrian\Breban\Tools\Image\Domain\Model\ImageInterface {
 
 	/**
-	 * Returns a thumbnail of this image.
+	 * Returns a watermark thumbnail of this image.
 	 *
 	 * If maximum width/height is not specified or exceed the original images size,
 	 * width/height of the original image is used
@@ -21,7 +21,8 @@ class Image extends \TYPO3\Media\Domain\Model\Image implements \Adrian\Breban\To
 	 * Note: The image variant that will be created is intentionally not added to the imageVariants collection of this image
 	 * If you want to create a persisted image variant, use createImageVariant() instead
 	 *
-	 * @param integer $maximumWidth
+	 * 
+	 * @param string $text watermark text
 	 * @param integer $maximumHeight
 	 * @param string $ratioMode Whether the resulting image should be cropped if both edge's sizes are supplied that would hurt the aspect ratio.
 	 * @return \TYPO3\Media\Domain\Model\ImageVariant
