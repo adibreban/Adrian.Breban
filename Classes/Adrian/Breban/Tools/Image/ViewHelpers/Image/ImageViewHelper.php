@@ -68,7 +68,7 @@ class ImageViewHelper extends \TYPO3\Media\ViewHelpers\ImageViewHelper{
 	 *
 	 * @return string an <img...> html tag
 	 */
-	public function render(\Adrian\Breban\Tools\Image\Domain\Model\ImageInterface $image = NULL, $maximumWidth = NULL, $maximumHeight = NULL, $allowCropping = FALSE, $allowUpScaling = FALSE ){
+	public function render(\Adrian\Breban\Tools\Image\Domain\Model\ImageInterface $image = NULL, $maximumWidth = NULL, $maximumHeight = NULL, $allowCropping = FALSE, $allowUpScaling = FALSE, $watermark=false ){
 		$watermark = 'adi';
 		if($watermark)return $watermark;
 		else return 'adi';
