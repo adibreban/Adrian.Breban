@@ -1,0 +1,38 @@
+<f:layout name="Default" />
+
+<f:section name="Title">Edit logo "{logo.title}"</f:section>
+
+<f:section name="Content">
+	<f:form action="update" object="{logo}" objectName="logo">
+		<ol>
+			<li>
+				<label for="shape">Shape</label>
+				<f:form.textfield property="shape" id="shape" />
+			</li>
+		
+			<li>
+				<label for="business_type">Business_type</label>
+				<f:form.textfield property="business_type" id="business_type" />
+			</li>
+		
+			<li>
+				<label for="bg_color">Bg_color</label>
+				<f:form.textfield property="bg_color" id="bg_color" />
+			</li>
+		
+			<li>
+				<label for="fore_color">Fore_color</label>
+				<f:form.textfield property="fore_color" id="fore_color" />
+			</li>
+		
+			<li>
+				<label for="title">Title</label>
+				<f:form.textfield property="title" id="title" />
+			</li>
+		
+			<li>
+				<f:form.submit value="Update" />
+			</li>
+		</ol>
+	</f:form>
+</f:section>

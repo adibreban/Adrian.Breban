@@ -1,0 +1,45 @@
+<f:layout name="Default" />
+
+<f:section name="Title">New banner</f:section>
+
+<f:section name="Content">
+	<p>Just fill out the following form to create a new banner:</p>
+
+	<f:form action="create" objectName="newBanner">
+		<ol>
+			<li>
+				<label for="width">width</label>
+				<f:form.textfield property="width" id="width" />
+			</li>
+		
+			<li>
+				<label for="height">height</label>
+				<f:form.textfield property="height" id="height" />
+			</li>
+		
+			<li>
+				<label for="business_type">business_type</label>
+				<f:form.textfield property="business_type" id="business_type" />
+			</li>
+		
+			<li>
+				<label for="bg_color">bg_color</label>
+				<f:form.textfield property="bg_color" id="bg_color" />
+			</li>
+		
+			<li>
+				<label for="fore_color">fore_color</label>
+				<f:form.textfield property="fore_color" id="fore_color" />
+			</li>
+		
+			<li>
+				<label for="title">title</label>
+				<f:form.textfield property="title" id="title" />
+			</li>
+		
+			<li>
+				<f:form.submit value="Create" />
+			</li>
+		</ol>
+	</f:form>
+</f:section>

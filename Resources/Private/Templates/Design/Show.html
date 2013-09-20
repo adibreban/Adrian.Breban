@@ -1,0 +1,44 @@
+<f:layout name="Default" />
+
+<f:section name="Title">Show design"{design.title}"</f:section>
+
+<f:section name="Content">
+	<table>
+		<tr>
+			<th>Business_type</th>
+			<td>{design.business_type}</td>
+		</tr>
+	
+		<tr>
+			<th>Bg_color</th>
+			<td>{design.bg_color}</td>
+		</tr>
+	
+		<tr>
+			<th>Fore_color</th>
+			<td>{design.fore_color}</td>
+		</tr>
+	
+		<tr>
+			<th>Title</th>
+			<td>{design.title}</td>
+		</tr>
+		{namespace m=Adrian\Breban\Tools\Image\ViewHelpers\Image}
+		
+		<f:if condition="{design.image}">
+		<tr>
+			<th>thumb</th>
+			<td><m:image image="{design.image}" maximumHeight="72" /></td>
+		</tr>
+		<tr>
+			<th>Image</th>
+			<td><m:image image="{design.image}" /></td>
+		</tr>
+
+		</f:if>
+		
+
+
+	</table>
+	<f:link.action action="index">Back</f:link.action>
+</f:section>

@@ -1,0 +1,20 @@
+<f:layout name="Default" />
+
+<f:section name="Title">New solution</f:section>
+
+<f:section name="Content">
+	<p>Just fill out the following form to create a new solution:</p>
+
+	<f:form action="create" objectName="newSolution">
+		<ol>
+			<li>
+				<label for="title">Solution</label>
+				<f:form.textfield property="title" id="title" />
+			</li>
+		
+			<li>
+				<f:form.submit value="Create" />
+			</li>
+		</ol>
+	</f:form>
+</f:section>

@@ -1,0 +1,41 @@
+<f:layout name="Default" />
+
+<f:section name="Title">New design</f:section>
+
+<f:section name="Content">
+	<p>Just fill out the following form to create a new design:</p>
+{namespace media=Adrian\Breban\Tools\Image\ViewHelpers\Image}
+	<f:form action="create" objectName="newDesign" enctype="multipart/form-data">
+		<ol>
+			<li>
+				<label for="business_type">Business Type</label>
+				<f:form.textfield property="business_type" id="business_type" />
+			</li>
+		
+			<li>
+				<label for="bg_color">Bg Color</label>
+				<f:form.textfield property="bg_color" id="bg_color" />
+			</li>
+		
+			<li>
+				<label for="fore_color">Fore Color</label>
+				<f:form.textfield property="fore_color" id="fore_color" />
+			</li>
+		
+			<li>
+				<label for="title">Title</label>
+				<f:form.textfield property="title" id="title" />
+			</li>
+			
+	<f:if condition="{design.image}">
+		<media:image image="{design.image}" alt="An image, AN IMAGE!!!" maximumWidth="50" />
+	</f:if>
+	
+			<li>
+				<f:form.upload property="image.resource" id="image" />
+			<li>
+				<f:form.submit value="Create" />
+			</li>
+		</ol>
+	</f:form>
+</f:section>
